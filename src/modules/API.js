@@ -11,7 +11,7 @@ class API {
       }),
     });
   }
-  
+
   getGameScore = () => {
     const score = fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/sXfepIsNzVIibJ7qdAL3/scores/')
       .then((response) => response.json());
