@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     api.addNewScore(playerName, playerScore);
     populateScores();
   });
-  
+
   refreshButton.addEventListener('click', populateScores);
   populateScores();
 });
