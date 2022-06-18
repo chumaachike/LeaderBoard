@@ -39,7 +39,7 @@
 }
 
 #recentScores ul :nth-child(even) {
-  background-color: #e9ab24;
+  background-color: #808080;
   color: #141414;
 }
 
@@ -150,7 +150,6 @@
 body {
   overflow: auto;
   overflow-x: hidden;
-  background-color: #211f20;
   margin: 0;
 }
 
