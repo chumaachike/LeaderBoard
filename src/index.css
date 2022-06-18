@@ -1,21 +1,194 @@
-tr {
+#recentScores {
+  width: 40%;
+  margin-left: 5%;
+}
+
+#recentScores div {
   display: flex;
-  justify-content: space-between;
-  margin: 10px auto;
+  flex-direction: row;
+  gap: 5%;
+  justify-content: center;
 }
 
-tr:nth-child(odd) {
-  background-color: darkgray;
+#recentScores div h2 {
+  font-size: 33px;
+  color: #f7ae11;
 }
 
-.contents {
-  width: 100%;
+#recentScores div button {
+  font-size: 18px;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+#recentScores div button:hover {
+  color: #fff;
+  background-color: #0d776c;
+}
+
+#recentScores ul {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0 50px;
+  flex-direction: column;
+  border: #0e0d0d 8px solid;
+  border-radius: 5px;
+  padding: 0;
+  list-style: none;
+  background-color: #0e0d0d;
 }
 
-table {
-  width: 540px;
+#recentScores ul :nth-child(even) {
+  background-color: #e9ab24;
+  color: #141414;
+}
+
+#recentScores ul li {
+  background-color: #0d776c;
+  font-size: 33px;
+  color: #ebebeb;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  #addNewScore form button {
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    align-self: center;
+  }
+
+  #recentScores {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #addNewScore h2 {
+    font-size: 33px;
+    color: #f7ae11;
+    margin-bottom: 45px;
+  }
+
+  #recentScores div h2 {
+    font-size: 25px;
+  }
+
+  #recentScores div button {
+    height: 40px;
+    width: 100px;
+  }
+
+  #recentScores ul li {
+    font-size: 22px;
+  }
+}
+
+#addNewScore {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+#addNewScore form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#addNewScore form input {
+  font-size: 22px;
+  padding: 15px;
+}
+
+#addNewScore form input:hover {
+  background-color: #c4c1b7;
+}
+
+#addNewScore form input:hover::placeholder {
+  color: #3b3b3b;
+}
+
+#addNewScore form button:hover {
+  color: #fff;
+  background-color: #0d776c;
+}
+
+@media screen and (max-width: 768px) {
+  #addNewScore {
+    align-items: center;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #addNewScore h2 {
+    font-size: 25px;
+    margin-bottom: 18px;
+  }
+
+  #addNewScore form {
+    gap: 15px;
+  }
+
+  #addNewScore form input {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  #addNewScore form button {
+    font-size: 18px;
+    height: 45px;
+    width: 125px;
+  }
+}
+
+body {
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #211f20;
+  margin: 0;
+}
+
+body * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body h1 {
+  margin-left: 15%;
+  color: #f7ae11;
+  font-size: 60px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body h1 {
+    font-size: 40px;
+    align-self: center;
+    margin: 0;
+    margin-top: 22px;
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
 }
